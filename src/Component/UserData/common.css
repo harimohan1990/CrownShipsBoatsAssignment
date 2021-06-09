@@ -33,3 +33,96 @@ margin: 0 auto
     text-transform: capitalize;
 
 }
+.google-meet{
+    background-color: rgb(255,255,255);
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+}
+.Icon-left{
+    display: flex;
+    width: 30%;
+}
+.Icon_left-heading{
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    color: #202124;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:0;
+    padding-left:12px
+}
+.Icon-center{
+    display:flex;
+}
+.Icon-right{
+    display: flex;
+    width: 40%;
+}
+.Icon-right-item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    margin-left: 12px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid antiquewhite;
+}
+.icon:hover{
+    box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+    -webkit-mask-image: none;
+    transition: none;
+}
+.right-icon-description{
+    color: #3c4043;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
+    .google-meet{
+        flex-direction: column;
+    }
+    .Icon-left {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .Icon_left-heading {
+        font-size: 8px;
+    }
+    .Icon-right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .right-icon-description{
+        font-size: 8px;
+    }
+}
